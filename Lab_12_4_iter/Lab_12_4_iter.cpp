@@ -42,12 +42,10 @@ int main()
 
 void CreateCycle(Elem*& first, int N, int Low, int High)
 {
-	int k = 0;
-	while (k < N)
+	for (int i = 0; i < N; i++)
 	{
 		int value = Low + rand() % (High - Low + 1);
 		Insert(first, value);
-		k++;
 	}
 }
 
